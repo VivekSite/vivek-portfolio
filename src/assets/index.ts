@@ -19,16 +19,23 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import python from "./tech/python.webp"
+import cpp from "./tech/cpp.png"
+import angular from "./tech/angular.png"
+import java from "./tech/java.png"
+import recoilJs from "./tech/recoil-js.svg"
+import rust from "./tech/rust.png"
+import aws from "./tech/aws.webp"
+import flask from "./tech/flask.webp"
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import functionup from "./company/functionup.png"
+import w3dev from "./company/w3dev.webp"
+import altius_tech from "./company/altius_tech.jpg"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
 
 export {
   logo,
@@ -51,12 +58,18 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,
+  python,
+  cpp,
+  angular,
+  java,
+  recoilJs,
+  rust,
+  aws,
+  flask,
+  functionup,
+  w3dev,
+  altius_tech
 };

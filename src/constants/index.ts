@@ -15,14 +15,20 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
+  python,
+  cpp,
+  angular,
+  java,
+  recoilJs,
+  rust,
+  aws,
+  flask,
+  functionup,
+  w3dev,
+  altius_tech,
 } from "../assets";
 
 export const navLinks = [
@@ -46,7 +52,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "NodeJs Developer",
     icon: mobile,
   },
   {
@@ -61,14 +67,6 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -77,12 +75,44 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Cpp",
+    icon: cpp,
+  },
+  {
+    name: "Rust",
+    icon: rust,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
   {
+    name: "Angular",
+    icon: angular,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
+  },
+  {
+    name: "Recoil JS",
+    icon: recoilJs,
   },
   {
     name: "Tailwind CSS",
@@ -93,16 +123,20 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "Flask",
+    icon: flask,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
+  },
+  {
+    name: "AWS",
+    icon: aws,
   },
   {
     name: "figma",
@@ -116,57 +150,43 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "FunctionUp Developer Experience",
+    company_name: "FunctionUp",
+    icon: functionup,
+    iconBg: "#001378",
+    date: "Jan 2024 - Feb 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining Flask APIs to create a Notification Engine for internal team",
+      "Collaborating with other developers to create high-quality products.",
+      "Created an Admin panel for getting the data for scheduling WhatsApp messages with AppSmith a no code tool for creting User Interfaces.",
+      "Learned how to use AWS lambda functions and EventBridge Scheduler for scheduling events. Also worked with WhatsApp Cloud API services.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "JavaScript Developer Intern",
+    company_name: "W3Dev ",
+    icon: w3dev,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "May 2024 - Current",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Developing and maintaining express APIs and Optimizing Backend and database.",
+      "Implementing captcha responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "MERN Stack Developer",
+    company_name: "Altius Technologies",
+    icon: altius_tech,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Aug 2024 - Current",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  }
 ];
 
 const testimonials = [

@@ -60,6 +60,12 @@ const About = () => {
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-purple-700 hover:text-purple-600 text-[17px] max-w-3xl leading-[30px]"
+      >
+        <a href="https://drive.google.com/file/d/1yIZIJ97SR4SNd2UBPo-57Yocz7alG3hh/view?usp=sharing" target="_blank">Resume</a>
+      </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
