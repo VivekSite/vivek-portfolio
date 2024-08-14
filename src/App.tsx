@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-
+import { Toaster } from "react-hot-toast";
 import {
   About,
   Contact,
@@ -30,6 +30,7 @@ const App = () => {
           <StarsCanvas />
         </div>
       </div>
+      <Toaster />
     </BrowserRouter>
   );
 };
