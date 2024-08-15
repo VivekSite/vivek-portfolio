@@ -18,9 +18,9 @@ const ServiceCard = ({
   <Tilt
     className="xs:w-[250px] w-full"
     options={{
-      max: 45,
+      max: 35,
       scale: 1,
-      speed: 450,
+      speed: 1000,
     }}
   >
     <motion.div
@@ -62,7 +62,7 @@ const About = () => {
       </motion.p>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-purple-700 hover:text-purple-600 text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-rose-700 hover:text-rose-600 text-[17px] max-w-3xl leading-[30px]"
       >
         <a href="https://drive.google.com/file/d/1yIZIJ97SR4SNd2UBPo-57Yocz7alG3hh/view?usp=sharing" target="_blank">Resume</a>
       </motion.p>

@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  project_link,
 }: {
   index: number;
   name: string;
@@ -21,6 +22,7 @@ const ProjectCard = ({
   tags: { name: string; color: string }[];
   image: string;
   source_code_link: string;
+  project_link: string;
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -32,7 +34,14 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div
+          className="relative w-full h-[230px] hover:cursor-pointer"
+          onClick={() => {
+            if (project_link) {
+              window.open(project_link, "_blank");
+            }
+          }}
+        >
           <img
             src={image}
             alt="project_image"
@@ -103,5 +112,5 @@ const Works = () => {
   );
 };
 
-const WrappedSection = SectionWrapper(Works, "");
+const WrappedSection = SectionWrapper(Works, "projects");
 export default WrappedSection;

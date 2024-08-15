@@ -1,15 +1,31 @@
 import { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
-import * as random from "maath/random/dist/maath-random.cjs";
 import * as th from "three";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const Stars = (props: any) => {
-  const ref = useRef<th.Points>();
-  const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
-  );
+interface StarsProps {
+  color?: string;
+  size?: number;
+  opacity?: number;
+  count?: number;
+  radius?: number;
+}
+
+const Stars = (props: StarsProps) => {
+  const ref = useRef<th.Points>(null);
+  const [sphere] = useState(() => {
+    const points = [];
+    for (let i = 0; i < 5000; i++) {
+      const x = Math.random() * 2 - 1;
+      const y = Math.random() * 2 - 1;
+      const z = Math.random() * 2 - 1;
+      const length = Math.sqrt(x * x + y * y + z * z);
+      if (length <= 1) {
+        points.push(x, y, z);
+      }
+    }
+    return new Float32Array(points);
+  });
 
   useFrame((_state, delta) => {
     if (ref.current) {

@@ -1,12 +1,10 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import toast from "react-hot-toast";
-
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { sendEmail } from "../services/sendMessage";
+import { sendEmail, showError, showSuccess } from "../services/sendMessage";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -40,37 +38,25 @@ const Contact = () => {
     setLoading(true);
 
     if (!form.name) {
-      toast.error("Name is required!", {
-        position: "top-center",
-      });
-
+      showError("Name is required!");
       setLoading(false);
       return;
     }
 
     if (!form.email) {
-      toast.error("Email is required!", {
-        position: "top-center",
-      });
-
+      showError("Email is required!");
       setLoading(false);
       return;
     }
 
     if (!emailValidator(form.email)) {
-      toast.error("Please enter a valid email address!", {
-        position: "top-center",
-      });
-
+      showError("Please enter a valid email address!");
       setLoading(false);
       return;
     }
 
     if (!form.message) {
-      toast.error("Message is required!", {
-        position: "top-center",
-      });
-
+      showError("Message is required!");
       setLoading(false);
       return;
     }
@@ -78,12 +64,7 @@ const Contact = () => {
     sendEmail(form.name, form.email, form.message)
       .then(() => {
         setLoading(false);
-        toast.success(
-          "Thank you. I will get back to you as soon as possible.",
-          {
-            position: "top-center",
-          }
-        );
+        showSuccess("Thank you. I will get back to you as soon as possible.");
 
         setForm({
           name: "",
@@ -93,11 +74,8 @@ const Contact = () => {
       })
       .catch((err) => {
         setLoading(false);
-        toast.error(
-          `Ahh, something went wrong. Please try again.\n${err.message}`,
-          {
-            position: "top-center",
-          }
+        showError(
+          `Ahh, something went wrong. Please try again.\n${err.message}`
         );
       });
   };

@@ -32,9 +32,11 @@ import functionup from "./company/functionup.png"
 import w3dev from "./company/w3dev.webp"
 import altius_tech from "./company/altius_tech.jpg"
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import quiz_bot from "./quiz_bot.png"
+import promptopia from "./promptopia.png"
+import online_shop from "./online_shop.png"
+import password_manager from "./password_manager.png"
+import health_challenge_tracker from "./health_challenge_traker.png"
 
 
 export {
@@ -58,9 +60,6 @@ export {
   redux,
   tailwind,
   typescript,
-  carrent,
-  jobit,
-  tripguide,
   python,
   cpp,
   angular,
@@ -71,5 +70,10 @@ export {
   flask,
   functionup,
   w3dev,
-  altius_tech
+  altius_tech,
+  quiz_bot,
+  promptopia,
+  online_shop,
+  password_manager,
+  health_challenge_tracker
 };

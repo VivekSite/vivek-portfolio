@@ -15,9 +15,6 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
   python,
   cpp,
   angular,
@@ -29,6 +26,11 @@ import {
   functionup,
   w3dev,
   altius_tech,
+  quiz_bot,
+  promptopia,
+  online_shop,
+  health_challenge_tracker,
+  password_manager,
 } from "../assets";
 
 export const navLinks = [
@@ -39,6 +41,10 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -186,100 +192,126 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  }
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "WhatsApp Quiz Bot",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developed a Quiz Bot for WhatsApp. It conducts a simple quiz on WhatsApp and shows the results accordingly. Used Flask APIs for sending and managing messages.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "twilio",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "flask",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: quiz_bot,
+    project_link:
+      "https://drive.google.com/file/d/1gjRTsG4wvgwFR8Z5RmoEGjoL3w7KFEYA/view?usp=drive_link",
+    source_code_link:
+      "https://github.com/VivekSite/send-whatsapp-messages-twilio",
   },
   {
-    name: "Job IT",
+    name: "Promptopia",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Social media platform where users can share interesting posts. Users can sign in with their Gmail Id And create interesting posts and share it. Search User by their name and post tags.",
     tags: [
       {
-        name: "react",
+        name: "NextJs",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Prisma",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: promptopia,
+    project_link: "https://promptopia-psi-umber.vercel.app/",
+    source_code_link: "https://github.com/VivekSite/promptverse",
   },
   {
-    name: "Trip Guide",
+    name: "Online Shop",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Online Shop is an ecommerce application where you can purchase variety of products. We can search for products add it to cart and place order. We also manage our address and orders.",
     tags: [
       {
-        name: "nextjs",
+        name: "Angular",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Primeng",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "ExpressJs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: online_shop,
+    project_link: "https://online-shop-ten-ruddy.vercel.app/",
+    source_code_link: "https://github.com/VivekSite/online-shop",
+  },
+  {
+    name: "Health Challenge Tracker",
+    description:
+      "Responsive web application where we can list down our health challenges and track them. We can filter and search the data by name, workout type and workout duration. ",
+    tags: [
+      {
+        name: "Angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Primeng",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: health_challenge_tracker,
+    project_link: "https://health-challenge-tracker-seven.vercel.app/",
+    source_code_link: "https://github.com/VivekSite/health-challenge-tracker",
+  },
+  {
+    name: "Password Manager",
+    description:
+      "A CLI tool to store passwords in encypted form. We can add and get passwords easily. For encryption I used GnuPG which provides a powerful encryption algorithm.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "GnuPG",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Encryption",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: password_manager,
+    project_link: password_manager,
+    source_code_link: "https://github.com/VivekSite/password_manager",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

@@ -1,12 +1,6 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import {
-  Decal,
-  Float,
-  OrbitControls,
-  Preload,
-  useTexture,
-} from "@react-three/drei";
+import { Decal, OrbitControls, Preload, useTexture } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
@@ -14,7 +8,7 @@ const Ball = (props: { imgUrl: string }) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
-    <Float speed={1} rotationIntensity={1} floatIntensity={1}>
+    <>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
@@ -32,7 +26,7 @@ const Ball = (props: { imgUrl: string }) => {
           map={decal}
         />
       </mesh>
-    </Float>
+    </>
   );
 };
 
