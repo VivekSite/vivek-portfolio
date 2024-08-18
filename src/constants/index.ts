@@ -31,6 +31,7 @@ import {
   online_shop,
   health_challenge_tracker,
   password_manager,
+  chat_app,
 } from "../assets";
 
 export const navLinks = [
@@ -267,6 +268,32 @@ const projects = [
     image: online_shop,
     project_link: "https://online-shop-ten-ruddy.vercel.app/",
     source_code_link: "https://github.com/VivekSite/online-shop",
+  },
+  {
+    name: "Chat Application",
+    description:
+      "Developed a Chat application with NextJS. Login with credentials or OAuth and start chatting with anyone who is active. Used Pusher to send the message on realtime.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AuthJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Pusher",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: chat_app,
+    project_link: "https://messenger-clone-ten-lovat.vercel.app/",
+    source_code_link: "https://github.com/VivekSite/messenger-clone",
   },
   {
     name: "Health Challenge Tracker",

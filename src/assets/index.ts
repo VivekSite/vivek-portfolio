@@ -37,7 +37,7 @@ import promptopia from "./promptopia.png"
 import online_shop from "./online_shop.png"
 import password_manager from "./password_manager.png"
 import health_challenge_tracker from "./health_challenge_traker.png"
-
+import chat_app from "./chat_app.png"
 
 export {
   logo,
@@ -74,6 +74,7 @@ export {
   quiz_bot,
   promptopia,
   online_shop,
+  chat_app,
   password_manager,
   health_challenge_tracker
 };
